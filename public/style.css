@@ -1,0 +1,112 @@
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+}
+
+#app {
+  height: 100%;
+}
+
+.misc-style {
+  width: 50vw;
+  padding: 3vw;
+  margin: 5vw auto;
+}
+.misc-style h2 {
+  text-transform: uppercase;
+  padding: 20px;
+  margin: -30px -30px 30px -30px;
+}
+.misc-style select {
+  box-sizing: border-box;
+  outline: none;
+  display: block;
+  width: 100%;
+  padding: 7px;
+  border: none;
+  margin-bottom: 10px;
+  height: 45px;
+}
+.misc-style textarea {
+  resize: none;
+  overflow: hidden;
+}
+.misc-style button {
+  border: 1px solid #3f51b5;
+  display: inline-block;
+  cursor: pointer;
+  padding: 8px 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  flex-direction: row-reverse;
+  height: 40px;
+}
+
+.logout {
+  margin-top: 2px;
+  height: 90%;
+  margin-right: 15px;
+  border-radius: 5px;
+}
+
+#loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+}
+
+#loading .message {
+  min-width: 480px;
+  padding: 3rem;
+
+  box-shadow: 0 2px 8px black;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+button {
+  border-radius: 6px;
+  display: inline-block;
+  cursor: pointer;
+  padding: 6px 24px;
+  text-decoration: none;
+}
+.misc-style input[type="text"],
+.misc-style input[type="date"],
+.misc-style input[type="datetime"],
+.misc-style input[type="email"],
+.misc-style input[type="number"],
+.misc-style input[type="search"],
+.misc-style input[type="time"],
+.misc-style input[type="url"],
+.misc-style input[type="password"],
+.misc-style textarea,
+button:hover {
+  background: linear-gradient(to bottom, #3f51b5 5%, #3f51b5 100%);
+}
+button:active {
+  position: relative;
+  top: 1px;
+}
